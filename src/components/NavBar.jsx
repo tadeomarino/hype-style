@@ -1,8 +1,8 @@
 import React from "react";
-import CartWidget from "./CartWidget";
-import "../scss/NavBar.css"
+import CartWidget from "./CartWidget.jsx";
+import "./styles/NavBar.css"
 
-const NavBar = () => {
+function NavBar(props){
     return (
         <ul class="nav justify-content-center">
   <li class="nav-item">
@@ -15,8 +15,11 @@ const NavBar = () => {
     <a class="nav-link" href="#">Products</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled">Log In</a>
+    <a class="nav-link" href="#">Log In</a>
   </li>
+
+  <CartWidget/>
+
 </ul>
     )
 }
