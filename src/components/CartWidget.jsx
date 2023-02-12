@@ -1,5 +1,5 @@
 import React from "react";
-import bag from '../bag.svg';
+import bag from '../../src/assets/bag.svg';
 import "./styles/CartWidget.css"
 
 const CartWidget = () => {

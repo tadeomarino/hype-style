@@ -1,14 +1,14 @@
 .cart-widget {
-    position: relative;
+    position: static;
     cursor: pointer;
-    text-align: right;
+    text-align: right;;
   }
 
   .qty-display {
     display: inline-block;
     width: 18px;
     height: 18px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 50%;
     font-size: 12px;
     position: absolute;
