@@ -1,5 +1,5 @@
 import React from 'react'
-import "./styles/ItemListContainer.css"
+import "./ItemListContainer.css"
 
 const ItemListContainer = (props) => {
   

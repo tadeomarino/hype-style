@@ -1,7 +1,7 @@
 import React from 'react'
-import ItemListContainer from './ItemListContainer'
-import NavBar from './NavBar'
-import "./styles/Landing.css"
+import ItemListContainer from "../ItemListContainer/ItemListContainer"
+import NavBar from '../NavBar/NavBar'
+import "./Landing.css"
 
 const Landing = () => {
   return (
