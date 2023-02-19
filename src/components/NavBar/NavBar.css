@@ -1,12 +1,13 @@
-.nav{
-    background-color: #999;
-    font-weight: 400;
+.header-container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    height: 5vh;
-    margin: 20px;
+    max-height: 40px;
+    padding: 10px;
 }
 
-.nav-link{
-    color: black;
+ul{
+    display: inline-flex;
+    justify-content: space-between;
 }

@@ -1,4 +1,7 @@
-.landing{
-    display: block;
-    background-color: red;
+.app-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 10px;
+    background-color: #F3F3F3;
 }

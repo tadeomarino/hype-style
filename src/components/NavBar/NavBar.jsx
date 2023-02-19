@@ -1,29 +1,28 @@
 import React from "react";
 import CartWidget from "../CartWidget/CartWidget.jsx";
-import logo from "../../assets/logo.png"
-import "./NavBar.css"
+import logo from "../../assets/logo.png";
+import "./NavBar.css";
 
-function NavBar(props){
-    
+function NavBar() {
+
   return (
-      
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">CATEGORIAS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">NOSOTROS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">CONTACTO</a>
-        </li>
+    
+    <div className="header-container">
 
-        <img src={logo} alt="logo" width="45" height="45"/>
+      <img src={logo} alt="logo" width="150" height="150"/>
 
-  <CartWidget/>
+      <div className="nav-section">        
+        <ul>          
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PRODUCTS</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
 
-</ul>
-    )
+        <CartWidget />
+    
+    </div>
+  );
 }
 
 export default NavBar;
