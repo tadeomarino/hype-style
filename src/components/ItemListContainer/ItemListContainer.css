@@ -1,0 +1,15 @@
+.list-container{
+    display: inline-block;
+    flex-wrap: wrap;
+    border: 5px;
+    border-color: blueviolet;
+    box-sizing: border-box;
+    border: solid;
+    width: 100px;
+    height: 200px;    
+}
+
+.title{
+    text-align: center ;
+    font-size: 55px;
+}

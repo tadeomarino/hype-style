@@ -1,6 +1,6 @@
-#### HypeStyle | React E-Commerce
+### Proyecto Final CoderHouse | Sneakers | React.js E-Commerce
 
-### Tadeo Marino
+#### Tadeo Marino
 
 ## Available Scripts
 

@@ -1,0 +1,37 @@
+[
+    { 
+        "id": 1, 
+        "name": "Adidas Forum Buckle Low Bad Bunny Blue Tint", 
+        "description": "Descripción del producto 1", 
+        "price": 690,
+        "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Blue-Tint.jpg" 
+    },
+    { 
+        "id": 2, 
+        "name": "Adidas Forum Buckle Low Bad Bunny Last Forum", 
+        "description": "Descripción del producto 2", 
+        "price": 560,
+        "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
+    },
+    { 
+        "id": 3, 
+        "name": "Adidas Adilette 22 Slides Aluminum", 
+        "description": "Descripción del producto 3", 
+        "price": 120,
+        "imgUrl": "Adidas-Adilette-22-Slides-Aluminum.jpeg"
+    },
+    { 
+        "id": 4, 
+        "name": "Producto 4", 
+        "description": "Descripción del producto 4", 
+        "price": 20,
+        "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
+    },
+    { 
+        "id": 5, 
+        "name": "Producto 5", 
+        "description": "Descripción del producto 5", 
+        "price": 20,
+        "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
+    }
+]
