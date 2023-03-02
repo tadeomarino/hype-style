@@ -3,29 +3,20 @@ import Item from "../Item/Item.jsx";
 import "./ItemList.css"
 import productsData from "../../database/productsData.json"
 
-const ItemList = () => {
-  
-  const [items, setItems] = useState([]);
 
-  useEffect(() => {
-    
-    // Simulamos un retraso de red con setTimeout
-    setTimeout(() => {
-      
-      // Creamos algunos productos de ejemplo
-      setItems(productsData);
-
-    }, 2000);
-  }, []);
+// Se encarga de hacer el map con los productos
+const ItemList = ({products}) => {
 
   return (
     
     <div className="item-list-container">
+      
       <div className="item-list">
-        {items.map((item) => (
-          <Item key={item.id} name={item.name} description={item.description} price={item.price} imgUrl={item.imgUrl} />
+        {products.map((product) => (
+          <Item key={product.id} name={product.name} description={product.description} price={product.price} imgUrl={product.imgUrl} category={product.category} />
         ))}
       </div>
+    
     </div>
   
   );

@@ -4,6 +4,8 @@
         "name": "Adidas Forum Buckle Low Bad Bunny Blue Tint", 
         "description": "Descripción del producto 1", 
         "price": 690,
+        "category": "Zapatillas",
+        "stock": 10,
         "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Blue-Tint.jpg" 
     },
     { 
@@ -11,6 +13,8 @@
         "name": "Adidas Forum Buckle Low Bad Bunny Last Forum", 
         "description": "Descripción del producto 2", 
         "price": 560,
+        "category": "Zapatillas",
+        "stock": 10,
         "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
     },
     { 
@@ -18,6 +22,8 @@
         "name": "Adidas Adilette 22 Slides Aluminum", 
         "description": "Descripción del producto 3", 
         "price": 120,
+        "category": "Zapatillas",
+        "stock": 10,
         "imgUrl": "Adidas-Adilette-22-Slides-Aluminum.jpeg"
     },
     { 
@@ -25,6 +31,8 @@
         "name": "Producto 4", 
         "description": "Descripción del producto 4", 
         "price": 20,
+        "category": "Zapatillas",
+        "stock": 10,
         "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
     },
     { 
@@ -32,6 +40,53 @@
         "name": "Producto 5", 
         "description": "Descripción del producto 5", 
         "price": 20,
+        "category": "Zapatillas",
+        "stock": 10,
+        "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
+    },
+    { 
+        "id": 6, 
+        "name": "Supreme Preme Hooded Sweattshirt Ash Grey", 
+        "description": "Descripción del producto 5", 
+        "price": 345,
+        "category": "Hoddies",
+        "stock": 10,
+        "imgUrl": "Supreme-Preme-Hooded-Sweatshirt-Ash-Grey.jpg"
+    },
+    { 
+        "id": 7, 
+        "name": "Drew House Mascot Hoodie (fw21) Black", 
+        "description": "Descripción del producto 5", 
+        "price": 345,
+        "category": "Hoddies",
+        "stock": 10,
+        "imgUrl": "drew-house-mascot-hoodie-fw21-black.jpg"
+    },
+    { 
+        "id": 8, 
+        "name": "Producto 5", 
+        "description": "Descripción del producto 5", 
+        "price": 20,
+        "category": "Hoddies",
+        "stock": 10,
+        "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
+    },
+    { 
+        "id": 9, 
+        "name": "Producto 5", 
+        "description": "Descripción del producto 5", 
+        "price": 20,
+        "category": "Hoddies",
+        "stock": 10,
+        "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
+    },
+    { 
+        "id": 10, 
+        "name": "Producto 5", 
+        "description": "Descripción del producto 5", 
+        "price": 20,
+        "category": "Hoddies",
+        "stock": 10,
         "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
     }
 ]

@@ -44,3 +44,54 @@
     font-size: 24px;
     color: #333;
   }
+
+
+
+  /* Estilos para el botón principal */
+.nav-item.dropdown button.dropbtn {
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10rem;
+}
+
+/* Estilos para la lista desplegable */
+.nav-item.dropdown ul.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0;
+  margin: 0;
+  min-width: 10rem;
+  z-index: 1;
+}
+
+/* Estilos para los elementos de la lista desplegable */
+.nav-item.dropdown ul.dropdown-content li.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item.dropdown ul.dropdown-content li.nav-item a.nav-link {
+  font-size: 1rem;
+  color: #333;
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-item.dropdown ul.dropdown-content li.nav-item a.nav-link:hover {
+  background-color: #eee;
+}
