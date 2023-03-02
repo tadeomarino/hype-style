@@ -13,6 +13,7 @@ const Item = ({ name, price, imgUrl, category }) => {
       <p>${price}</p>
       <p>{category}</p>
 
+
       <button>Detail</button>
       
       {/* <ItemCount /> */}

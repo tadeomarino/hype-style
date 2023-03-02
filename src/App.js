@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import ItemDetail from "./components/ItemDetail/ItemDetail";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Landing from "./components/Landing/Landing";
@@ -16,6 +16,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Landing />} />
         <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
+        <Route path='/detail/:productId' element={<ItemDetailContainer/>}/>
         {/* <Route exact path="/" element={<ItemDetail />} /> */}
 
       </Routes>
