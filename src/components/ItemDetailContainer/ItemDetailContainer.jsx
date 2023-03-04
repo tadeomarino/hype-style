@@ -27,7 +27,7 @@ const ItemDetailContainer = () => {
   return (
     <>
       <div className="container">
-        {product ? <ItemDetail product={product} /> : <p>Loading...</p>}
+        {product ? <ItemDetail item={product} /> : <p>Loading...</p>}
       </div>
     </>
   );

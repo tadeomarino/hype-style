@@ -13,7 +13,11 @@ const ItemDetail = ({item}) => {
     
     <div>
         <div>
-            <img src={pathImgUrl(`./${item.imgUrl}`)} alt={item.name} />
+       {item.imgUrl && <img
+       
+        src={pathImgUrl(`./${item.imgUrl}`)}
+        alt={item.name}
+      />}
             <h1>{item.name}</h1>
             <p>Description: {item.description}</p>
             <p>$ {item.price}</p>
