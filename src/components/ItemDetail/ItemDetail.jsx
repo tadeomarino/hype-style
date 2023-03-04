@@ -3,7 +3,7 @@ import ItemCount from '../ItemCount/ItemCount'
 
 const pathImgUrl = require.context("../../assets/img", true)
 
-const ItemDetail = ({product = {}}) => {
+const ItemDetail = ({item}) => {
 
   const handleOnAdd = (value) =>{
     console.log(`se agrego ${value}`);
@@ -13,13 +13,13 @@ const ItemDetail = ({product = {}}) => {
     
     <div>
         <div>
-            <img src={pathImgUrl(`./${product.imgUrl}`)} alt={product.name} />
-            <h1>{product.name}</h1>
-            <p>Description: {product.description}</p>
-            <p>$ {product.price}</p>
-            <p>Stock disponible: {product.stock}</p>
+            <img src={pathImgUrl(`./${item.imgUrl}`)} alt={item.name} />
+            <h1>{item.name}</h1>
+            <p>Description: {item.description}</p>
+            <p>$ {item.price}</p>
+            <p>Stock disponible: {item.id}</p>
         </div>
-        <ItemCount onAdd = {handleOnAdd} stock = {product.stock} initial = {1}/>
+        <ItemCount onAdd = {handleOnAdd} stock = {item.stock} initial = {1}/>
     </div>
   )
 }
