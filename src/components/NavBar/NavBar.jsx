@@ -1,48 +1,49 @@
 import React from "react";
 import CartWidget from "../CartWidget/CartWidget.jsx";
-// import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.png";
 import "./NavBar.css";
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
-function NavBar() {
-
+const NavBar = ({id}) => {
   return (
-    <div className="navbar-container">
-      <nav className="navbar">        
+    <div className="main-container">
+      <div className="logo-container">
+      <NavLink to={"/"}>
+        <img src={logo} alt="logo" className="logo-container" />
+      </NavLink>
+      </div>
 
-        <ul className="navbar-nav">          
-        
-        <NavLink to={'/'}>
-          <li className="nav-item"><a className="nav-link">HOME</a></li>
-        </NavLink>
-        
-        <li className="nav-item dropdown">
-            
-            <button className="nav-link dropbtn">PRODUCTS ▼</button>
-            
-            {/* <ul className="dropdown-content"> */}
-              
-              <NavLink to={'/category/Zapatillas'}>
-                <li className="nav-item"><a className="nav-link">Zapatillas</a></li>
+      <div>
+        <ul className="nav-container">
+          <NavLink to={"/"}>
+            <li>
+              <a>HOME</a>
+            </li>
+          </NavLink>
+
+          <li>
+            <div className="dropdown">
+              <button className="dropbtn">CATEGORIES</button>
+              <div className="dropdown-content">
+              <NavLink to={"/category/Zapatillas"}>
+                <button className="dropbtn">SNEAKERS</button>
               </NavLink>
-              
-              <NavLink to={'/category/Hoddies'}>
-                <li className="nav-item"><a className="nav-link">Hoddies</a></li>
+              <NavLink to={"/category/Hoodies"}>
+                <button className="dropbtn">HOODIES</button>
               </NavLink>
-              
-              {/* </ul> */}
+              </div>
+            </div>
           </li>
-          <li className="nav-item"><a className="nav-link">CONTACT</a></li>
+
+          <li>
+            <a>CONTACT</a>
+          </li>
         </ul>
-      
-      </nav>
+      </div>
 
-      {/* <div className="logo-container">
-        <img src={logo} alt="logo" className="logo"/>
-      </div> */}
-
-      <CartWidget />
-    
+      <div className="cart-container">
+        <CartWidget />
+      </div>
     </div>
   );
 }

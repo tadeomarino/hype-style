@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       
-      <NavBar className='app-container'/>
+      <NavBar className="app-container"/>
 
       <Routes>
         <Route exact path="/" element={<Landing />} />

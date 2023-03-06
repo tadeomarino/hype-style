@@ -49,7 +49,7 @@
         "name": "Supreme Preme Hooded Sweattshirt Ash Grey", 
         "description": "Descripción del producto 5", 
         "price": 345,
-        "category": "Hoddies",
+        "category": "Hoodies",
         "stock": 10,
         "imgUrl": "Supreme-Preme-Hooded-Sweatshirt-Ash-Grey.jpg"
     },
@@ -58,7 +58,7 @@
         "name": "Drew House Mascot Hoodie (fw21) Black", 
         "description": "Descripción del producto 5", 
         "price": 345,
-        "category": "Hoddies",
+        "category": "Hoodies",
         "stock": 10,
         "imgUrl": "drew-house-mascot-hoodie-fw21-black.jpg"
     },
@@ -67,7 +67,7 @@
         "name": "Supreme Great China Wall Sword Hooded Sweatshirt Red", 
         "description": "Descripción del producto 5", 
         "price": 20,
-        "category": "Hoddies",
+        "category": "Hoodies",
         "stock": 10,
         "imgUrl": "Supreme-Great-China-Wall-Sword-Hooded-Sweatshirt-Red.jpg"
     },
@@ -76,17 +76,17 @@
         "name": "Producto 5", 
         "description": "Descripción del producto 5", 
         "price": 20,
-        "category": "Hoddies",
+        "category": "Hoodies",
         "stock": 10,
-        "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
+        "imgUrl": "Supreme-Great-China-Wall-Sword-Hooded-Sweatshirt-Red.jpg"
     },
     { 
         "id": 10, 
         "name": "Producto 5", 
         "description": "Descripción del producto 5", 
         "price": 20,
-        "category": "Hoddies",
+        "category": "Hoodies",
         "stock": 10,
-        "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
+        "imgUrl": "drew-house-mascot-hoodie-fw21-black.jpg"
     }
 ]

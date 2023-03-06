@@ -9,7 +9,9 @@
     height: 200px;    
 }
 
-.title{
+h1{
     text-align: center ;
     font-size: 55px;
+    padding: 25px;
+    font-weight: 900;
 }

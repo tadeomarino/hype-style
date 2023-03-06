@@ -6,7 +6,7 @@ const Ad = () => {
   
   return (
     <div>
-        <img className="page-header" src={pathImgUrl("./Nike-header.jpg") }/>
+        <img className="page-header" src={pathImgUrl("./Nike-portrait.jpg") }/>
     </div>
   )
 }
