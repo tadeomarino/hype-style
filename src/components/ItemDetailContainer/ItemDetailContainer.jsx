@@ -33,37 +33,3 @@ const ItemDetailContainer = () => {
   );
 };
 export default ItemDetailContainer;
-
-
-
-// const ItemDetailContainer = () => {
-
-//   const { productId } = useParams();
-
-//   const [item, setItem] = useState(null);
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//     // Buscando el producto por su ID en el archivo JSON
-//     const foundItem = productsData.find(product => product.id === productId);
-
-//     if (foundItem) {
-//       setItem(foundItem);
-//       setLoading(false);
-//     } else {
-//       console.error(`Product with id ${productId} not found`);
-//     }
-//   }, [productId]);
-
-//   return (
-//     <div>
-//       {loading ? (
-//         <p>Loading...</p>
-//       ) : (
-//         <ItemDetail item={item} />
-//       )}
-//     </div>
-//   );
-// };
-
-// export default ItemDetailContainer;

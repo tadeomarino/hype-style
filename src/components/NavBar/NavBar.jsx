@@ -13,8 +13,8 @@ const NavBar = ({id}) => {
       </NavLink>
       </div>
 
-      <div>
-        <ul className="nav-container">
+      <div className="nav-container">
+        <ul>
           <NavLink to={"/"}>
             <li>
               <a>HOME</a>
