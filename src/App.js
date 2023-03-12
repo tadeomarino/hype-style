@@ -6,6 +6,7 @@ import CartDetail from "./components/CartDetail/CartDetail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Landing from "./components/Landing/Landing";
+import { CartProvider } from "./context/cartContext";
 
 
 function App() {
@@ -14,14 +15,18 @@ function App() {
       
       <NavBar className="app-container"/>
 
+      <CartProvider>
+
       <Routes>
         <Route exact path="/" element={<Landing />} />
         <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
         <Route path='/detail/:productId' element={<ItemDetailContainer/>}/>
+        <Route path='/products' element={<ItemListContainer/>}/>
         <Route path="/cart" element={<CartDetail/>}/>
-        {/* <Route exact path="/" element={<ItemDetail />} /> */}
-
       </Routes>
+
+      </CartProvider>
+
     </BrowserRouter>
   );
 }

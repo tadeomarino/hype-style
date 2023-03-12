@@ -10,7 +10,7 @@ const ItemDetail = ({ item }) => {
   };
 
   return (
-    <div class="item-container">
+    <div className="item-container">
       <div>
         {item.imgUrl && (
           <img src={pathImgUrl(`./${item.imgUrl}`)} alt={item.name} />
@@ -20,7 +20,7 @@ const ItemDetail = ({ item }) => {
         <p>$ {item.price}</p>
         <p>Stock disponible: {item.id}</p>
       </div>
-      <ItemCount onAdd={handleOnAdd} stock={item.stock} initial={1} />
+      <ItemCount onAdd={handleOnAdd} stock={item.stock} initial={1} item={item}/>
     </div>
   );
 };

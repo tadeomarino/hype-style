@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { NavLink } from "react-router-dom";
+import CartContext from '../../context/cartContext.js';
+import { CartProvider } from "../../context/cartContext.js";
 import "./ItemCount.css"
 
-function ItemCount({ initial, stock, onAdd }) {
+
+function ItemCount({ initial, stock, item }) {
   const [count, setCount] = useState(initial);
+  const { addProduct } = useContext(CartContext);
 
   const handleIncrement = () => {
     if (count < stock) {
@@ -16,28 +21,32 @@ function ItemCount({ initial, stock, onAdd }) {
     }
   };
 
-  const handleAdd = () => {
+  const handleAdd = () => { 
     if (count) {
-      onAdd(count);
+      addProduct(item, count);
+      alert(`Se agregó ${count} ${item.name} al carrito.`);
     }
+    
   };
 
   return (
-    <div class="container">
+    <div className="container">
 
-      <div class="flex-container">
-        <button class="increment-button" onClick={handleIncrement}>
-          +
-        </button>
-        <p class="count">Tienes {count} ítems</p>
-        <button class="decrement-button" onClick={handleDecrement}>
+      <div className="flex-container">
+        <button className="decrement-button" onClick={handleDecrement}>
           -
         </button>
+        <p className="count">Tienes {count} ítems</p>
+        <button className="increment-button" onClick={handleIncrement}>
+          +
+        </button>
       </div>
-      <div class="button-container">
-        <button class="add-to-cart-button" onClick={handleAdd}>
+      <div className="button-container">
+      <NavLink to={`/cart`}>
+        <button className="add-to-cart-button" onClick={handleAdd}>
           Agregar al carrito
         </button>
+        </NavLink>
       </div>
     </div>
   );

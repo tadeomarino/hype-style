@@ -19,30 +19,30 @@
     },
     { 
         "id": 3, 
-        "name": "Adidas Adilette 22 Slides Aluminum", 
+        "name": "Adidas Yeezy Boost 350 V2 Earth", 
         "description": "Descripción del producto 3", 
         "price": 120,
         "category": "Zapatillas",
         "stock": 10,
-        "imgUrl": "Adidas-Adilette-22-Slides-Aluminum.jpeg"
+        "imgUrl": "adidas-Yeezy-Boost-350-V2-Earth.jpg"
     },
     { 
         "id": 4, 
-        "name": "Producto 4", 
+        "name": "Jordan 1 Retro High Dark Mocha", 
         "description": "Descripción del producto 4", 
         "price": 20,
         "category": "Zapatillas",
         "stock": 10,
-        "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
+        "imgUrl": "Jordan-1-Retro-High-Dark-Mocha.jpg"
     },
     { 
         "id": 5, 
-        "name": "Producto 5", 
+        "name": "Jordan 1 Retro High OG Defiant SB LA to Chicago", 
         "description": "Descripción del producto 5", 
         "price": 20,
         "category": "Zapatillas",
         "stock": 10,
-        "imgUrl": "Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg"
+        "imgUrl": "Jordan-1-Retro-High-OG-Defiant-SB-LA-to-Chicago.jpg"
     },
     { 
         "id": 6, 
