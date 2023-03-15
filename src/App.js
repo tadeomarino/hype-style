@@ -13,9 +13,9 @@ function App() {
   return (
     <BrowserRouter>
       
+      <CartProvider value={0}>
       <NavBar className="app-container"/>
 
-      <CartProvider>
 
       <Routes>
         <Route exact path="/" element={<Landing />} />

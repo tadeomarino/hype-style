@@ -13,7 +13,7 @@ const ItemListContainer = ({ greeting }) => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
         resolve(productsData);
-      }, 2000);
+      }, 1000);
     });
 
     if (categoryId) {
