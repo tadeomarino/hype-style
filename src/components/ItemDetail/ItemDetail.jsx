@@ -5,6 +5,7 @@ import "./ItemDetail.css";
 const pathImgUrl = require.context("../../assets/img/items", true);
 
 const ItemDetail = ({ item }) => {
+  
   const handleOnAdd = (value) => {
     console.log(`se agrego ${value}`);
   };
@@ -12,13 +13,13 @@ const ItemDetail = ({ item }) => {
   return (
     <div className="item-container">
       <div>
-        {item.imgUrl && (
-          <img src={pathImgUrl(`./${item.imgUrl}`)} alt={item.name} />
+        {item.imageId && (
+          <img src={pathImgUrl(`./${item.imageId}`)} alt={item.title} />
         )}
-        <h1>{item.name}</h1>
+        <h1>{item.title}</h1>
         <p>Description: {item.description}</p>
         <p>$ {item.price}</p>
-        <p>Stock disponible: {item.id}</p>
+        <p>Stock disponible: {item.stock}</p>
       </div>
       <ItemCount
         onAdd={handleOnAdd}

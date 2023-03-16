@@ -3,7 +3,6 @@ import ItemList from "../ItemList/ItemList.jsx";
 import "./ItemListContainer.css";
 import { collection, doc, getDoc, getDocs, getFirestore, snapshotEqual } from "firebase/firestore";
 import { useParams } from "react-router-dom";
-import productsData from "../../database/productsData.json";
 
 const ItemListContainer = () => {
   

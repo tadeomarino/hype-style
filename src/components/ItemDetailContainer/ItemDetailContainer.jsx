@@ -1,33 +1,39 @@
-import React, { useState, useEffect } from "react";
-import ItemDetail from "../ItemDetail/ItemDetail.jsx";
-import productsData from "../../database/productsData.json";
-import { useParams } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
+import ItemDetail from '../ItemDetail/ItemDetail.jsx';
+import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
-  const [product, setProducts] = useState({});
-
-  const { productId } = useParams();
-  console.log(productId);
-  // Usamos un efecto para cargar los datos del Json de cursos al montar el componente.
+  
+  const [item, setItem] = useState();
+  
+  const { id } = useParams();
 
   useEffect(() => {
-    const getData = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(productsData);
-      }, 1000);
+    const db = getFirestore();
+    
+    // Make sure that the id parameter is a string
+    if (typeof id !== 'string') {
+      console.error('Invalid id parameter:', id);
+      return;
+    }
+  
+    const itemRef = doc(db, 'items', id);
+  
+    getDoc(itemRef).then((docSnapshot) => {
+      if (docSnapshot.exists()) {
+        setItem({ id: docSnapshot.id, ...docSnapshot.data() });
+      }
     });
+  }, [id]);  
 
-    getData.then((res) => {
-      setProducts(res.find((product) => product.id === parseInt(productId)));
-    });
-  }, [productId]);
+  console.log(id)
 
   return (
-    <>
-      <div className="container">
-        {product ? <ItemDetail item={product} /> : <p>Loading...</p>}
-      </div>
-    </>
+    <div className='container'>
+      {item ? <ItemDetail item={item} /> : <p>Loading...</p>}
+    </div>
   );
 };
+
 export default ItemDetailContainer;

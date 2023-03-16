@@ -30,8 +30,7 @@ const Item = ({
       <NavLink to={`/detail/${id}`}>
         <button>Detail</button>
       </NavLink>
-
-      {/* <ItemCount /> */}
+      
     </div>
   );
 };
