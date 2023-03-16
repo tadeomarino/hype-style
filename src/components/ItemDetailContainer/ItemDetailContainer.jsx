@@ -3,7 +3,6 @@ import ItemDetail from "../ItemDetail/ItemDetail.jsx";
 import productsData from "../../database/productsData.json";
 import { useParams } from "react-router-dom";
 
-
 const ItemDetailContainer = () => {
   const [product, setProducts] = useState({});
 
@@ -22,7 +21,6 @@ const ItemDetailContainer = () => {
       setProducts(res.find((product) => product.id === parseInt(productId)));
     });
   }, [productId]);
-
 
   return (
     <>

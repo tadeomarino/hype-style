@@ -2,19 +2,30 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Item.css";
 
-const pathImgUrl = require.context("../../assets/img", true);
+const pathImgUrl = require.context("../../assets/img/items", true);
 
-const Item = ({ name, price, imgUrl, category, id }) => {
+const Item = ({
+  key,
+  title,
+  description,
+  price,
+  imageId,
+  stock,
+  categoryId,
+  id,
+}) => {
   return (
     <div className="item">
       <img
         className="item-image"
-        src={pathImgUrl(`./${imgUrl}`)}
-        alt={Item.name}
+        src={pathImgUrl(`./${imageId}`)}
+        alt={title}
       />
-      <h3>{name}</h3>
+      <h3>{title}</h3>
       <p>${price}</p>
-      <p>{category}</p>
+      <p>{categoryId}</p>
+      <p>{stock}</p>
+      <p>{key}</p>
 
       <NavLink to={`/detail/${id}`}>
         <button>Detail</button>

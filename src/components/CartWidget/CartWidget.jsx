@@ -2,20 +2,19 @@ import React, { useContext } from "react";
 import CartContext from "../../context/cartContext.js";
 import bag from "../../assets/bag.svg";
 import { NavLink } from "react-router-dom";
-import "./CartWidget.css"
+import "./CartWidget.css";
 
 const CartWidget = (item) => {
+  const { cartItems, getTotalQuantity } = useContext(CartContext);
 
-    const { cartItems, getTotalQuantity } = useContext(CartContext);
-
-    return(
-        <NavLink to={"/cart"}>
-        <div className="cart-widget">
-        <img src={bag} alt="bag"/>
+  return (
+    <NavLink to={"/cart"}>
+      <div className="cart-widget">
+        <img src={bag} alt="bag" />
         <div className="qty-display">{getTotalQuantity()}</div>
-        </div>
-        </NavLink>
-        )
-}
+      </div>
+    </NavLink>
+  );
+};
 
 export default CartWidget;

@@ -2,7 +2,7 @@ import React from "react";
 import ItemCount from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
 
-const pathImgUrl = require.context("../../assets/img", true);
+const pathImgUrl = require.context("../../assets/img/items", true);
 
 const ItemDetail = ({ item }) => {
   const handleOnAdd = (value) => {
@@ -20,7 +20,12 @@ const ItemDetail = ({ item }) => {
         <p>$ {item.price}</p>
         <p>Stock disponible: {item.id}</p>
       </div>
-      <ItemCount onAdd={handleOnAdd} stock={item.stock} initial={1} item={item}/>
+      <ItemCount
+        onAdd={handleOnAdd}
+        stock={item.stock}
+        initial={1}
+        item={item}
+      />
     </div>
   );
 };

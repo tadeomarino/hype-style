@@ -29,7 +29,9 @@ const CartProvider = (props) => {
   };
 
   const addProduct = (product, quantity) => {
-    const existingCartItemIndex = cartItems.findIndex((item) => item.id === product.id);
+    const existingCartItemIndex = cartItems.findIndex(
+      (item) => item.id === product.id
+    );
     if (existingCartItemIndex !== -1) {
       const updatedCartItems = [...cartItems];
       updatedCartItems[existingCartItemIndex].quantity += quantity;
@@ -47,7 +49,14 @@ const CartProvider = (props) => {
 
   return (
     <CartContext.Provider
-      value={{ cartItems, addProduct, removeProduct, clearCart, isInCart, getTotalQuantity }}
+      value={{
+        cartItems,
+        addProduct,
+        removeProduct,
+        clearCart,
+        isInCart,
+        getTotalQuantity,
+      }}
     >
       {/* props.children hace referencia a los componentes hijos que se van a renderizar dentro del proveedor de contexto CartContext.Provider. */}
       {props.children}

@@ -3,7 +3,7 @@ import CartContext from "../../context/cartContext.js";
 import { NavLink } from "react-router-dom";
 import "./CartDetail.css";
 
-const pathImgUrl = require.context("../../assets/img", true);
+const pathImgUrl = require.context("../../assets/img/items", true);
 
 function CartDetail() {
   const { cartItems, addProduct, removeProduct, clearCart, getTotalQuantity } =
