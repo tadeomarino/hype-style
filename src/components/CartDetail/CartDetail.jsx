@@ -6,6 +6,7 @@ import "./CartDetail.css";
 const pathImgUrl = require.context("../../assets/img/items", true);
 
 function CartDetail() {
+  
   const { cartItems, addProduct, removeProduct, clearCart, getTotalQuantity } =
     useContext(CartContext);
 
@@ -49,9 +50,9 @@ function CartDetail() {
           <tbody>
             {cartItems.map((item) => (
               <tr key={item.id}>
-                <td>{item.name}</td>
+                <td>{item.title}</td>
                 <td>
-                  <img src={pathImgUrl(`./${item.imgUrl}`)} alt={item.name} />
+                  <img src={pathImgUrl(`./${item.imageId}`)} alt={item.title} />
                 </td>
                 <td>
                   <button onClick={() => handleRemove(item)}>-</button>

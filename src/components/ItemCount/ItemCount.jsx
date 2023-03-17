@@ -1,11 +1,12 @@
 import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import CartContext from "../../context/cartContext.js";
-import { CartProvider } from "../../context/cartContext.js";
 import "./ItemCount.css";
 
 function ItemCount({ initial, stock, item }) {
+  
   const [count, setCount] = useState(initial);
+  
   const { addProduct } = useContext(CartContext);
 
   const handleIncrement = () => {
@@ -23,7 +24,7 @@ function ItemCount({ initial, stock, item }) {
   const handleAdd = () => {
     if (count) {
       addProduct(item, count);
-      alert(`Se agregó ${count} ${item.name} al carrito.`);
+      alert(`Se agregó ${count} ${item.title} al carrito.`);
     }
   };
 
