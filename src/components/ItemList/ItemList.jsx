@@ -4,11 +4,11 @@ import "./ItemList.css";
 
 // Se encarga de hacer el map con los productos
 
-const ItemList = ({ items }) => {
+const ItemList = ({ products }) => {
    return (
      <div className="item-list-container">
        <div className="item-list">
-         {items && items.map((item) => (
+         {products && products.map((item) => (
            <Item
              key={item.id}
              title={item.title}
@@ -26,16 +26,3 @@ const ItemList = ({ items }) => {
  };
  
  export default ItemList;
- 
- // const ItemList = ({items}) => {
-   //   return(
-     //     <div>
-     //         {items && items.map((item) => (
- //             <div key={item.id}>
- //                 <h1>{item.title}</h1>
- //                 <h2>{item.id}</h2>
- //                 <h3>{item.categoryId}</h3>
- //             </div>
- //         ))}
- //     </div>
- // )}

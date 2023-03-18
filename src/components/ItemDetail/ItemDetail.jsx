@@ -17,6 +17,7 @@ const ItemDetail = ({ item }) => {
           <img src={pathImgUrl(`./${item.imageId}`)} alt={item.title} />
         )}
         <h1>{item.title}</h1>
+        <p>Category: {item.categoryId}</p>
         <p>Description: {item.description}</p>
         <p>$ {item.price}</p>
         <p>Stock disponible: {item.stock}</p>
