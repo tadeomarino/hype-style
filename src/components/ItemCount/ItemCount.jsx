@@ -41,11 +41,7 @@ function ItemCount({ initial, stock, item }) {
         </button>
       </div>
       <div className="button-container">
-        <NavLink to={`/cart`}>
-          <button className="add-to-cart-button" onClick={handleAdd}>
-            Add to cart
-          </button>
-        </NavLink>
+        <AddToCart handleAdd={handleAdd} />
       </div>
     </div>
   );
