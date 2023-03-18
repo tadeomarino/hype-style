@@ -3,6 +3,7 @@ import React, { createContext, useState } from "react";
 const CartContext = createContext();
 
 const CartProvider = (props) => {
+  
   const [cartItems, setCartItems] = useState([]);
 
   const clearCart = () => {
@@ -41,6 +42,11 @@ const CartProvider = (props) => {
     }
   };
 
+  const exitProduct = (id) => {
+    const filteredCartItems = cartItems.filter((item) => item.id !== id);
+    setCartItems(filteredCartItems);
+  };
+
   const getTotalQuantity = () => {
     let cant = 0;
     cartItems.forEach((e) => (cant += e.quantity));
@@ -56,6 +62,7 @@ const CartProvider = (props) => {
         clearCart,
         isInCart,
         getTotalQuantity,
+        exitProduct,
       }}
     >
       {/* props.children hace referencia a los componentes hijos que se van a renderizar dentro del proveedor de contexto CartContext.Provider. */}

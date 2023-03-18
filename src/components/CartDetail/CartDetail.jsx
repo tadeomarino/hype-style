@@ -7,7 +7,7 @@ const pathImgUrl = require.context("../../assets/img/items", true);
 
 function CartDetail() {
   
-  const { cartItems, addProduct, removeProduct, clearCart, getTotalQuantity } =
+  const { cartItems, addProduct, removeProduct, clearCart, getTotalQuantity, exitProduct } =
     useContext(CartContext);
 
   // Agregamos de a 1 item.
@@ -23,6 +23,10 @@ function CartDetail() {
   const handleClear = () => {
     clearCart();
   };
+
+  const deleteProduct = () => {
+    exitProduct()
+  }
 
   const getTotalPrice = () => {
     let totalPrice = 0;
@@ -62,7 +66,7 @@ function CartDetail() {
                 <td>${item.price.toFixed(2)}</td>
                 <td>${(item.price * item.quantity).toFixed(2)}</td>
                 <td>
-                  <button onClick={() => handleRemove(item)}>Remove</button>
+                  <button onClick={() => exitProduct(item.id)}>Remove</button>
                 </td>
               </tr>
             ))}
@@ -78,6 +82,9 @@ function CartDetail() {
       <NavLink to={"/products"}>
         <button>Continue Shopping</button>
       </NavLink>
+      <div>
+        <button>Checkout</button>
+      </div>
     </div>
   );
 }

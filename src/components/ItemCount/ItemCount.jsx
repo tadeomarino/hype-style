@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import CartContext from "../../context/cartContext.js";
+import AddToCart from "../AddToCart/AddtoCart.jsx";
 import "./ItemCount.css";
 
 function ItemCount({ initial, stock, item }) {
@@ -42,7 +43,7 @@ function ItemCount({ initial, stock, item }) {
       <div className="button-container">
         <NavLink to={`/cart`}>
           <button className="add-to-cart-button" onClick={handleAdd}>
-            Agregar al carrito
+            Add to cart
           </button>
         </NavLink>
       </div>

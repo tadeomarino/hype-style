@@ -57,24 +57,3 @@ const ItemListContainer = () => {
 }
 
 export default ItemListContainer;
-
-// const [products, setProducts] = useState([]);
-
-// const { categoryId } = useParams();
-
-// useEffect(() => {
-//   const getData = new Promise((resolve) => {
-//     setTimeout(() => {
-//       resolve(productsData);
-//     }, 1000);
-//   });
-
-//   if (categoryId) {
-//     getData.then((res) => {
-//       setProducts(res.filter((products) => products.category === categoryId));
-//     });
-//   } else
-//     getData.then((res) => {
-//       setProducts(res);
-//     });
-// }, [categoryId]);

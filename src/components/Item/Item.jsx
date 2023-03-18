@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useState, useContext} from "react";
 import { NavLink } from "react-router-dom";
 import "./Item.css";
+import CartContext from "../../context/cartContext.js";
 
 const pathImgUrl = require.context("../../assets/img/items", true);
 
-const Item = ({
-  key,
-  title,
-  description,
-  price,
-  imageId,
-  stock,
-  categoryId,
-  id,
-}) => {
+const Item = ({ key, title, price, imageId, stock, categoryId, id, item }) => {
+  
+  const [count, setCount] = useState([]);
+  
+  const { addProduct } = useContext(CartContext);
+
+  const handleAdd = () => {
+    if (id) {
+      console.log(id);
+      addProduct(item, count,);}}
+  
   return (
     <div className="item">
       <img
@@ -30,6 +32,10 @@ const Item = ({
       <NavLink to={`/detail/${id}`}>
         <button>Detail</button>
       </NavLink>
+
+      <button className="add-to-cart-button" onClick={handleAdd}>
+          Agregar al carrito
+      </button>
       
     </div>
   );
