@@ -4,6 +4,7 @@
   align-items: center;
   background-color: #fff;
   padding: 10px;
+  max-height: 70px;
 }
 
 .logo-container {
