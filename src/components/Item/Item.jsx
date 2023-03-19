@@ -31,12 +31,7 @@ const Item = ({ key, title, price, imageId, stock, categoryId, id, item }) => {
 
       <NavLink to={`/detail/${id}`}>
         <button>Detail</button>
-      </NavLink>
-
-      <button className="add-to-cart-button" onClick={handleAdd}>
-          Agregar al carrito
-      </button>
-      
+      </NavLink>      
     </div>
   );
 };

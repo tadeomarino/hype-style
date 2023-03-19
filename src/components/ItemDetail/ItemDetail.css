@@ -1,67 +1,45 @@
 .item-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .item-container img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-  
-  .item-container h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  .item-container p {
-    margin-bottom: 10px;
-  }
-  
-  .item-container p:nth-of-type(3) {
-    font-size: 20px;
-    color: #ff5733;
-  }
-  
-  .item-container p:last-of-type {
-    font-style: italic;
-  }
-  
-  .ItemCount {
-    display: flex;
-    align-items: center;
-  }
-  
-  .ItemCount button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 8px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 0 5px;
-  }
-  
-  .ItemCount button:hover {
-    background-color: #0069d9;
-  }
-  
-  .ItemCount button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  .ItemCount input[type="number"] {
-    width: 40px;
-    text-align: center;
-    margin: 0 5px;
-  }
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 20px;
+}
+
+.item-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-container > div > h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.item-container > div > p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.item-container > div > p:first-of-type {
+  font-weight: bold;
+}
+
+.item-container > div > img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.item-container > div > .stock {
+  margin-top: 20px;
+}
+
+.item-container > div > .description {
+  margin-top: 20px;
+}

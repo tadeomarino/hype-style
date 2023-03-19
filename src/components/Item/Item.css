@@ -40,7 +40,7 @@ p {
 }
 
 .item button {
-  background-color: #555;
+  background-color: #f44336;
   border: none;
   color: white;
   cursor: pointer;
@@ -52,12 +52,4 @@ p {
 .item button:hover {
   background-color: #fff;
   color: #555;
-}
-
-.item button.add-to-cart-button {
-  background-color: #f44336;
-}
-
-.item button.add-to-cart-button:hover {
-  background-color: #555;
 }
