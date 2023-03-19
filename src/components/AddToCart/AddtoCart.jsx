@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const AddToCart = ({handleAdd}) => {
+const AddToCart = ({handleAdd,}) => {
+
   
     return (
     <div>

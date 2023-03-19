@@ -1,10 +1,10 @@
 import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import CartContext from "../../context/cartContext.js";
-import AddToCart from "../AddToCart/AddtoCart.jsx";
+import AddToCart from "../AddToCart/AddToCart.jsx";
 import "./ItemCount.css";
 
-function ItemCount({ initial, stock, item }) {
+function ItemCount({ initial, stock, item, id}) {
   
   const [count, setCount] = useState(initial);
   
@@ -25,7 +25,7 @@ function ItemCount({ initial, stock, item }) {
   const handleAdd = () => {
     if (count) {
       addProduct(item, count);
-      alert(`Se agregó ${count} ${item.title} al carrito.`);
+      alert(`Se agregó ${count} ${item.title} ${item.id} al carrito.`);
     }
   };
 
@@ -41,7 +41,7 @@ function ItemCount({ initial, stock, item }) {
         </button>
       </div>
       <div className="button-container">
-        <AddToCart handleAdd={handleAdd} />
+        <AddToCart id={id} handleAdd={handleAdd}/>
       </div>
     </div>
   );
