@@ -1,14 +1,20 @@
 import React, { useContext } from "react";
 import CartContext from "../../context/cartContext.js";
+import OrderFrom from "../OrderForm/OrderForm.jsx";
 import { NavLink } from "react-router-dom";
 import "./CartDetail.css";
 
 const pathImgUrl = require.context("../../assets/img/items", true);
 
 function CartDetail() {
-  
-  const { cartItems, addProduct, removeProduct, clearCart, getTotalQuantity, exitProduct } =
-    useContext(CartContext);
+  const {
+    cartItems,
+    addProduct,
+    removeProduct,
+    clearCart,
+    getTotalQuantity,
+    exitProduct,
+  } = useContext(CartContext);
 
   // Agregamos de a 1 item.
   const handleAdd = (item) => {
@@ -25,8 +31,8 @@ function CartDetail() {
   };
 
   const deleteProduct = () => {
-    exitProduct()
-  }
+    exitProduct();
+  };
 
   const getTotalPrice = () => {
     let totalPrice = 0;
@@ -82,8 +88,11 @@ function CartDetail() {
       <NavLink to={"/products"}>
         <button>Continue Shopping</button>
       </NavLink>
+      <NavLink to={"/products"}></NavLink>
       <div>
-        <button>Checkout</button>
+        <NavLink to={"/checkout"}>
+          <button>CheckOut</button>
+        </NavLink>
       </div>
     </div>
   );
