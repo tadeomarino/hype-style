@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import CartContext from "../../context/cartContext.js";
-import OrderFrom from "../OrderForm/OrderForm.jsx";
+import OrderForm from "../OrderForm/OrderForm.jsx";
 import { NavLink } from "react-router-dom";
 import "./CartDetail.css";
 
@@ -91,7 +91,7 @@ function CartDetail() {
       <NavLink to={"/products"}></NavLink>
       <div>
         <NavLink to={"/checkout"}>
-          <button>CheckOut</button>
+          <button>Check Out</button>
         </NavLink>
       </div>
     </div>
