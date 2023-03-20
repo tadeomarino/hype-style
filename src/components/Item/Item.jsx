@@ -1,20 +1,10 @@
-import React, { useState, useContext} from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Item.css";
-import CartContext from "../../context/cartContext.js";
 
 const pathImgUrl = require.context("../../assets/img/items", true);
 
-const Item = ({ key, title, price, imageId, stock, categoryId, id, item }) => {
-  
-  const [count, setCount] = useState([]);
-  
-  const { addProduct } = useContext(CartContext);
-
-  const handleAdd = () => {
-    if (id) {
-      console.log(id);
-      addProduct(item, count,);}}
+const Item = ({ title, price, imageId, stock, categoryId, id, }) => {
   
   return (
     <div className="item">
@@ -27,7 +17,6 @@ const Item = ({ key, title, price, imageId, stock, categoryId, id, item }) => {
       <p>${price}</p>
       <p>{categoryId}</p>
       <p>{stock}</p>
-      <p>{key}</p>
 
       <NavLink to={`/detail/${id}`}>
         <button>Detail</button>

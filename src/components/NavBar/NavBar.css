@@ -5,6 +5,7 @@
   background-color: #fff;
   padding: 10px;
   max-height: 70px;
+  margin-bottom: 10px;
 }
 
 .logo-container {
@@ -35,7 +36,6 @@
 
 .nav-container ul li a:hover {
   color: #111;
-  text-decoration: underline;
 }
 
 .dropdown {

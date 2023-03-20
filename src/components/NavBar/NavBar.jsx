@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = ({id}) => {
   
-  const { cartItems, getTotalQuantity } = useContext(CartContext);
+  const { cartItems } = useContext(CartContext);
   
   return (
  <div className="main-container">
@@ -19,11 +19,9 @@ const NavBar = ({id}) => {
   
    <div className="nav-container">
      <ul>
-       <NavLink to={"/"}>
          <li>
-           <a>HOME</a>
+         <NavLink to={"/"}>HOME</NavLink>
          </li>
-       </NavLink>
   
        <li>
          <div className="dropdown">
@@ -40,7 +38,7 @@ const NavBar = ({id}) => {
        </li>
   
        <li>
-         <a>CONTACT</a>
+         <NavLink to={"/contact"}>CONTACT</NavLink>
        </li>
      </ul>
    </div>

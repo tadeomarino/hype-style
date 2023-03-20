@@ -3,8 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin-top: 90px;
+  height: 130vh;
+}
+.table-container {
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 h2 {
@@ -31,9 +34,33 @@ form {
   margin-bottom: 1rem;
 }
 
+.back-to-cart-btn {
+  background-color: #f7f7f7;
+  border: 2px solid #ddd;
+  color: #555;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-to-cart-btn:hover {
+  background-color: #ddd;
+  border-color: #aaa;
+  color: #333;
+}
+
 label {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 input,
