@@ -75,7 +75,9 @@ const OrderForm = () => {
           <label htmlFor="email">Email:</label>
           <input type="text" value={buyerEmail} onChange={(e) => setBuyerEmail(e.target.value)} />
         </div>
-
+        {cartItems.length === 0 ? (
+        <p>No items in cart</p>
+      ) : (
         <div className="form-group">
   <label>Products:</label>
   <table>
@@ -100,11 +102,12 @@ const OrderForm = () => {
       ))}
     </tbody>
   </table>
-</div>
-
-      <h3>Total: ${total}</h3>
-        <button type="submit">Send</button>
+  <h3>Total: ${total}</h3>
+  <button type="submit">Send</button>
+        </div>
+)}
       </form>
+      
     </div>
   );
 };
