@@ -90,7 +90,7 @@ function CartDetail() {
       </NavLink>
       <NavLink to={"/products"}></NavLink>
       <div>
-        <NavLink to={"/checkout"}>
+        <NavLink to={"/order-form"}>
           <button>Check Out</button>
         </NavLink>
       </div>

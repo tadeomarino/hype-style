@@ -51,6 +51,7 @@ const CartProvider = (props) => {
     let cant = 0;
     cartItems.forEach((e) => (cant += e.quantity));
     return cant;
+
   };
 
   return (

@@ -43,7 +43,7 @@ const ItemListContainer = () => {
       } else {
         setShouldFilter(false);
       }
-    }, [categoryId, items]);
+    }, [categoryId]);
   
     const products = shouldFilter ? filteredProductList : items;
 

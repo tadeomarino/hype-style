@@ -8,6 +8,7 @@ import OrderForm from "./components/OrderForm/OrderForm.jsx"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./context/cartContext";
 import "./App.css";
+import OrderDetail from "./components/OrderDetail/OrderDetail";
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
           <Route path="/detail/:id" element={<ItemDetailContainer />} />
           <Route path="/products" element={<ItemListContainer />} />
           <Route path="/cart" element={<CartDetail />} />
-          <Route path="/checkout" element={<OrderForm />} />
+          <Route path="/order-form" element={<OrderForm />} />
+          <Route path="/order-detail" element={<OrderDetail />} />
         </Routes>
       </CartProvider>
     </BrowserRouter>
