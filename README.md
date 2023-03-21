@@ -1,4 +1,4 @@
-# ![](./src/assets/logo.png){ width=100 height=100 } Sneakers E-commerce Website | ReactJs
+# Sneakers E-commerce | ReactJs - CoderHouse
 
 This is a simple e-commerce website for purchasing sneakers. The website is built using React and allows users to browse through a list of available sneakers, add them to their cart, and checkout their order.
 
