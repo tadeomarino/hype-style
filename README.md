@@ -1,4 +1,4 @@
-# ![](logo.png) Sneakers E-commerce Website | ReactJs
+# ![](./src/assets/logo.png) Sneakers E-commerce Website | ReactJs
 
 This is a simple e-commerce website for purchasing sneakers. The website is built using React and allows users to browse through a list of available sneakers, add them to their cart, and checkout their order.
 
