@@ -1,8 +1,9 @@
 import React, { useContext, useState } from "react";
-import CartContext from "../../context/cartContext";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
-import "./OrderForm.css";
 import { NavLink } from "react-bootstrap";
+import CartContext from "../../context/cartContext";
+import { Navigate } from "react-router-dom";
+import "./OrderForm.css";
 
 const pathImgUrl = require.context("../../assets/img/items", true);
 
@@ -14,6 +15,7 @@ const OrderForm = () => {
   const [buyerName, setBuyerName] = useState("");
   const [buyerPhone, setBuyerPhone] = useState("");
   const [buyerEmail, setBuyerEmail] = useState("");
+  const [orderCompleted, setOrderCompleted] = useState(false);
   const [total, setTotal] = useState(0);
 
   // Instancia de firestore
@@ -51,7 +53,7 @@ const OrderForm = () => {
       .then((docRef) => {
         console.log("Documento enviado. ID:", docRef.id);
         alert("¡Compra realizada con éxito!");
-        // resetForm();
+        setOrderCompleted(true);
       })
       .catch((e) => {
         console.log("Error al agregar el documento", e);
@@ -65,6 +67,7 @@ const OrderForm = () => {
     <div className="form-container">
       <h2>Check Out</h2>
       <form onSubmit={handleSubmit}>
+      {orderCompleted && <Navigate to={"/order-detail"} />}
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
@@ -123,7 +126,9 @@ const OrderForm = () => {
               </tbody>
             </table>
             </div>
+            <br />
             <div className="cart-total">Total: ${getTotalPrice().toFixed(2)}</div>
+            <br />
             <button type="submit">Send</button>
           </div>
         )}

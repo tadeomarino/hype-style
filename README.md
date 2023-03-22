@@ -43,6 +43,6 @@ This project can be easily deployed to Firebase hosting. Simply follow the steps
 
 ## Credits
 
-This project was created by Tadeo Marino as part of CoderHouse ReactJs. 
+This project was created by Tadeo Marino as part of CoderHouse ReactJs - 45010. 
 
 Sneaker images used in this project are sourced from DropsBA.
