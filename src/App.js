@@ -4,12 +4,11 @@ import NavBar from "./components/NavBar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer.jsx";
 import CartDetail from "./components/CartDetail/CartDetail";
-import OrderForm from "./components/OrderForm/OrderForm.jsx"
+import OrderForm from "./components/OrderForm/OrderForm.jsx";
+import OrderDetail from "./components/OrderDetail/OrderDetail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./context/cartContext";
 import "./App.css";
-import OrderDetail from "./components/OrderDetail/OrderDetail";
-
 
 function App() {
   return (

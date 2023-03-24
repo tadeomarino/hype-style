@@ -1,15 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { collection, doc, getDoc, getDocs, getFirestore, snapshotEqual } from "firebase/firestore";
 import ItemList from "../ItemList/ItemList.jsx";
 import "./ItemListContainer.css";
-import {
-  collection,
-  doc,
-  getDoc,
-  getDocs,
-  getFirestore,
-  snapshotEqual,
-} from "firebase/firestore";
-import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
 
@@ -20,6 +13,7 @@ const ItemListContainer = () => {
     const { categoryId } = useParams();
   
     useEffect(() => {
+      
       const db = getFirestore();
   
       const itemsRef = collection(db, "items");
