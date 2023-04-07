@@ -12,7 +12,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/sneakers-react-coderhouse">
       <CartProvider value={0}>
         <NavBar className="app-container" />
 
