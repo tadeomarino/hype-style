@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/sneakers-react-coderhouse/static/css/main.c4908229.css",
-    "main.js": "/sneakers-react-coderhouse/static/js/main.a85dac9b.js",
-    "static/media/Jordan-portait.jpg": "/sneakers-react-coderhouse/static/media/Jordan-portait.ae47fa440cf3800c14d1.jpg",
-    "static/media/Nike-portrait.jpg": "/sneakers-react-coderhouse/static/media/Nike-portrait.ec734ae844e8a15afd5b.jpg",
-    "static/media/Jordan-1.jpg": "/sneakers-react-coderhouse/static/media/Jordan-1.40503bdf8128384f6f2b.jpg",
-    "static/media/logo.png": "/sneakers-react-coderhouse/static/media/logo.e623e3822401574393cf.png",
-    "static/media/Sneakers-portrait.png": "/sneakers-react-coderhouse/static/media/Sneakers-portrait.315eb9bd8d25adfad19c.png",
-    "static/media/Nike-header.jpg": "/sneakers-react-coderhouse/static/media/Nike-header.a7c8427322f27bf3f099.jpg",
-    "static/media/Supreme-Great-China-Wall-Sword-Hooded-Sweatshirt-Red.jpg": "/sneakers-react-coderhouse/static/media/Supreme-Great-China-Wall-Sword-Hooded-Sweatshirt-Red.4c672d2a26fdf8cb1b5a.jpg",
-    "static/media/Supreme-Preme-Hooded-Sweatshirt-Ash-Grey.jpg": "/sneakers-react-coderhouse/static/media/Supreme-Preme-Hooded-Sweatshirt-Ash-Grey.62ac1145aa75357af2f9.jpg",
-    "static/media/adidas-Yeezy-Boost-350-V2-Earth.jpg": "/sneakers-react-coderhouse/static/media/adidas-Yeezy-Boost-350-V2-Earth.4fd73e9d5c9f2bb6467d.jpg",
-    "static/media/Jordan-1-Retro-High-OG-Defiant-SB-LA-to-Chicago.jpg": "/sneakers-react-coderhouse/static/media/Jordan-1-Retro-High-OG-Defiant-SB-LA-to-Chicago.8e8a76b915e04b000a37.jpg",
-    "static/media/Adidas-Forum-Buckle-Low-Bad-Bunny-Blue-Tint.jpg": "/sneakers-react-coderhouse/static/media/Adidas-Forum-Buckle-Low-Bad-Bunny-Blue-Tint.f68a88075c3cf5b4a9b9.jpg",
-    "static/media/Supreme-State-Hooded-Sweatshirt-Burgundy.jpg": "/sneakers-react-coderhouse/static/media/Supreme-State-Hooded-Sweatshirt-Burgundy.c9b0f062347f7916afd3.jpg",
-    "static/media/Jordan-1-Retro-High-Dark-Mocha.jpg": "/sneakers-react-coderhouse/static/media/Jordan-1-Retro-High-Dark-Mocha.7b1cfee50aae68c55dc5.jpg",
-    "static/media/Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg": "/sneakers-react-coderhouse/static/media/Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.a0f2aa86af125cc2845e.jpg",
-    "static/media/drew-house-mascot-hoodie-fw21-black.jpg": "/sneakers-react-coderhouse/static/media/drew-house-mascot-hoodie-fw21-black.4df900092887506b9450.jpg",
-    "index.html": "/sneakers-react-coderhouse/index.html",
-    "static/media/bag.svg": "/sneakers-react-coderhouse/static/media/bag.d3ebdf3bd5cde33762abd2b0b5fd1cb2.svg",
-    "main.c4908229.css.map": "/sneakers-react-coderhouse/static/css/main.c4908229.css.map",
-    "main.a85dac9b.js.map": "/sneakers-react-coderhouse/static/js/main.a85dac9b.js.map"
+    "main.css": "/static/css/main.c4908229.css",
+    "main.js": "/static/js/main.02243573.js",
+    "static/media/Jordan-portait.jpg": "/static/media/Jordan-portait.ae47fa440cf3800c14d1.jpg",
+    "static/media/Nike-portrait.jpg": "/static/media/Nike-portrait.ec734ae844e8a15afd5b.jpg",
+    "static/media/Jordan-1.jpg": "/static/media/Jordan-1.40503bdf8128384f6f2b.jpg",
+    "static/media/logo.png": "/static/media/logo.e623e3822401574393cf.png",
+    "static/media/Sneakers-portrait.png": "/static/media/Sneakers-portrait.315eb9bd8d25adfad19c.png",
+    "static/media/Nike-header.jpg": "/static/media/Nike-header.a7c8427322f27bf3f099.jpg",
+    "static/media/Supreme-Great-China-Wall-Sword-Hooded-Sweatshirt-Red.jpg": "/static/media/Supreme-Great-China-Wall-Sword-Hooded-Sweatshirt-Red.4c672d2a26fdf8cb1b5a.jpg",
+    "static/media/Supreme-Preme-Hooded-Sweatshirt-Ash-Grey.jpg": "/static/media/Supreme-Preme-Hooded-Sweatshirt-Ash-Grey.62ac1145aa75357af2f9.jpg",
+    "static/media/adidas-Yeezy-Boost-350-V2-Earth.jpg": "/static/media/adidas-Yeezy-Boost-350-V2-Earth.4fd73e9d5c9f2bb6467d.jpg",
+    "static/media/Jordan-1-Retro-High-OG-Defiant-SB-LA-to-Chicago.jpg": "/static/media/Jordan-1-Retro-High-OG-Defiant-SB-LA-to-Chicago.8e8a76b915e04b000a37.jpg",
+    "static/media/Adidas-Forum-Buckle-Low-Bad-Bunny-Blue-Tint.jpg": "/static/media/Adidas-Forum-Buckle-Low-Bad-Bunny-Blue-Tint.f68a88075c3cf5b4a9b9.jpg",
+    "static/media/Supreme-State-Hooded-Sweatshirt-Burgundy.jpg": "/static/media/Supreme-State-Hooded-Sweatshirt-Burgundy.c9b0f062347f7916afd3.jpg",
+    "static/media/Jordan-1-Retro-High-Dark-Mocha.jpg": "/static/media/Jordan-1-Retro-High-Dark-Mocha.7b1cfee50aae68c55dc5.jpg",
+    "static/media/Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.jpg": "/static/media/Adidas-Forum-Buckle-Low-Bad-Bunny-Last-Forum.a0f2aa86af125cc2845e.jpg",
+    "static/media/drew-house-mascot-hoodie-fw21-black.jpg": "/static/media/drew-house-mascot-hoodie-fw21-black.4df900092887506b9450.jpg",
+    "index.html": "/index.html",
+    "static/media/bag.svg": "/static/media/bag.d3ebdf3bd5cde33762abd2b0b5fd1cb2.svg",
+    "main.c4908229.css.map": "/static/css/main.c4908229.css.map",
+    "main.02243573.js.map": "/static/js/main.02243573.js.map"
   },
   "entrypoints": [
     "static/css/main.c4908229.css",
-    "static/js/main.a85dac9b.js"
+    "static/js/main.02243573.js"
   ]
 }
