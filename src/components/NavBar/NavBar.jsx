@@ -25,7 +25,7 @@ const NavBar = ({id}) => {
   
        <li>
          <div className="dropdown">
-           <button className="dropbtn">CATEGORIES</button>
+           <button className="dropbtn">PRODUCTS</button>
            <div className="dropdown-content">
            <NavLink to={"/category/sneakers"}>
              <button className="dropbtn">SNEAKERS</button>
