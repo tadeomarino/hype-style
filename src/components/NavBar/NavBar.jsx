@@ -38,7 +38,7 @@ const NavBar = ({id}) => {
        </li>
   
        <li>
-         <NavLink to={"/contact"}>CONTACT</NavLink>
+         <NavLink to={"/contact"}>ABOUT US</NavLink>
        </li>
      </ul>
    </div>
