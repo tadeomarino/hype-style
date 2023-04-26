@@ -6,10 +6,12 @@ const CartProvider = (props) => {
   
   const [cartItems, setCartItems] = useState([]);
 
+  // Clear cart
   const clearCart = () => {
     setCartItems([]);
   };
 
+  // Is in cart
   const isInCart = (id) => {
     return cartItems.find((item) => item.id === id) ? true : false;
   };
