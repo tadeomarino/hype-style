@@ -20,7 +20,7 @@ const ItemDetail = ({ item }) => {
         {/* <p>Category: {item.categoryId}</p> */}
         <p>{item.description}</p>
         <p>$ {item.price}</p>
-        <p>Stock disponible: {item.stock}</p>
+        <p>Stock: {item.stock}</p>
       </div>
       <ItemCount
         onAdd={handleOnAdd}
