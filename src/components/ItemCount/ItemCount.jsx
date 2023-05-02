@@ -35,7 +35,7 @@ function ItemCount({ initial, stock, item, id}) {
         <button className="decrement-button" onClick={handleDecrement}>
           -
         </button>
-        <p className="count">Tienes {count} ítems</p>
+        <p className="count">Seleccionaste {count} ítems</p>
         <button className="increment-button" onClick={handleIncrement}>
           +
         </button>
