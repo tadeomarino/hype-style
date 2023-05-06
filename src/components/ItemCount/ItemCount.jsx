@@ -1,5 +1,4 @@
 import React, { useState, useContext } from "react";
-import { NavLink } from "react-router-dom";
 import CartContext from "../../context/cartContext.js";
 import AddToCart from "../AddToCart/AddToCart.jsx";
 import "./ItemCount.css";
