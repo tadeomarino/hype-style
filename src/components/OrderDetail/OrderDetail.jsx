@@ -47,7 +47,7 @@ const OrderDetail = () => {
           </tr>
         </tfoot>
       </table>
-      <button>Back to home</button>
+      <button>Home</button>
     </div>
   );
 };
