@@ -6,7 +6,7 @@ const pathImgUrl = require.context("/src/assets/img/portrait", true);
 const Ad = () => {
   return (
     <div>
-      <img src={pathImgUrl("./Jordan-1.jpg")} />
+      <img alt= "Jordan 1" src={pathImgUrl("./Jordan-1.jpg")} />
     </div>
   );
 };
