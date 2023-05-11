@@ -24,7 +24,7 @@ function ItemCount({ initial, stock, item, id}) {
   const handleAdd = () => {
     if (count) {
       addProduct(item, count);
-      alert(`Se agregó ${count} ${item.title} ${item.id} al carrito.`);
+      alert(`Agregaste ${count} ${item.title} ${item.id} al carrito.`);
     }
   };
 
