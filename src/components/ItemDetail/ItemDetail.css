@@ -27,11 +27,11 @@
   margin-bottom: 10px;
   font-size: 18px;
 }
-
+/*Item container*/
 .item-container > div > p:first-of-type {
   font-weight: bold;
 }
-
+/*Item container*/
 .item-container > div > img {
   width: 300px;
   height: 300px;
