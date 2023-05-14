@@ -5,29 +5,30 @@
   font-family: Arial, sans-serif;
 }
 
+/* Cart detail */
 .cart-detail h2 {
   font-size: 1.5rem;
   margin: 0;
 }
-
+/* Cart detail */
 .cart-detail table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
   font-size: 1rem;
 }
-
+/* Cart detail */
 .cart-detail th,
 .cart-detail td {
   text-align: left;
   padding: 0.5rem;
   border-bottom: 1px solid #ccc;
 }
-
+/* Cart detail */
 .cart-detail th {
   font-weight: bold;
 }
-
+/* Cart detail */
 .cart-detail td img {
   max-width: 8rem;
   max-height: 8rem;
