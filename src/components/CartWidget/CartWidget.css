@@ -1,9 +1,12 @@
+
+/* Cart widget */
 .cart-widget {
     position: static;
     cursor: pointer;
     text-align: right;;
   }
 
+  /* qty-display */
   .qty-display {
     display: inline-block;
     width: 18px;
