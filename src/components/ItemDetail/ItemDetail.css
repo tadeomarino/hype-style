@@ -39,11 +39,11 @@
   margin: 0 auto;
   margin-bottom: 20px;
 }
-
+/*Item container*/
 .item-container > div > .stock {
   margin-top: 20px;
 }
-
+/*Item container*/
 .item-container > div > .description {
   margin-top: 20px;
 }
