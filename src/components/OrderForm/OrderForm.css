@@ -6,6 +6,7 @@
   align-items: center;
   height: 130vh;
 }
+/*table-container*/
 .table-container {
   max-height: 400px;
   overflow-y: auto;
