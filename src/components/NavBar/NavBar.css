@@ -57,7 +57,7 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/*nav-container*/
+/*dropbtn-container*/
 .dropbtn {
   font-weight: bold;
   cursor: pointer;
@@ -65,7 +65,7 @@
   border: none;
   outline: none;
 }
-/*nav-container*/
+/*cart-container*/
 .cart-container {
   display: flex;
   justify-content: center;
@@ -77,7 +77,7 @@
   position: relative;
 }
 
-
+/*cartv-container*/
 .cart-container:hover {
   cursor: pointer;
 }
