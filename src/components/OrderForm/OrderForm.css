@@ -46,7 +46,7 @@ form {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
+/*back-to-cart-btn:hover*/
 .back-to-cart-btn:hover {
   background-color: #ddd;
   border-color: #aaa;
