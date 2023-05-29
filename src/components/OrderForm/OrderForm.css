@@ -86,7 +86,7 @@ button[type="submit"] {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
+/*button[type="submit"]:hover*/
 button[type="submit"]:hover {
   background-color: #003d6b;
 }
