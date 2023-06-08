@@ -39,7 +39,7 @@ p {
 .add-to-cart-button:hover {
   background-color: #111;
 }
-
+/*item button*/
 .item button {
   background-color: #f44336;
   border: none;
@@ -49,7 +49,7 @@ p {
   padding: 8px 16px;
   transition-duration: 0.4s;
 }
-
+/*item button:hover */
 .item button:hover {
   background-color: #fff;
   color: #555;
